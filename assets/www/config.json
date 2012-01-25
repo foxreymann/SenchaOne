@@ -1,0 +1,20 @@
+{
+    "applicationName":"SoccerScoresSencha",
+    "applicationId":"com.codehaha.SoccerScoresSencha",
+    "iconName":"icon",
+    "versionString":"1.0",
+    "outputPath":"~/temp",
+    "webAppPath":"/Library/WebServer/Documents/eclipse/SoccerScoresSencha/assets/www",
+    "configuration":"Release",
+    "platform":"Android",
+    "deviceType":"Universal",
+    "certificatePath":"~/Documents/AndroidMarket/AndroidMarket.keystore",
+    "certificateAlias":"andrmark",
+    "sdkPath":"~/android",
+    "orientations": [
+        "portrait",
+        "landscapeLeft",
+        "landscapeRight",
+        "portraitUpsideDown"
+    ]
+}
