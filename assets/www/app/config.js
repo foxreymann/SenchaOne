@@ -1,4 +1,4 @@
-"countires" : [
+countires = [
     {
         "name" : "Live scores",
         "url" : "http://www.pita.it/soccer/resultScores-live.json",    
