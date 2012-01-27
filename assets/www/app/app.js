@@ -7,27 +7,28 @@ Ext.require([
     'Ext.List'
 ]);
 
+// Main application entry point
 Ext.application({
-    name: 'AM',
- 
-    appFolder: 'app',
-
-    controllers: [
-        'Users'
-    ],
- 
-    launch: function() {
-        Ext.create('Ext.Panel', {
-            fullscreen: 'true',
-            items: [
-                {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Standard Titlebar',
-                    ui: 'light'
-                },
-            ],
-            html : 'List of users will go here'
-        });
+	phoneStartupScreen: 'images/sencha_logo.png',
+	name: 'HelloWorld',  
+    // the controller will take care of creating the view        
+	controllers: ['Home'],
+	// You could delete this, here only to illustrate
+    // the sequence of events		
+	initialize: function () {
+		console.log('app initialize');
+		this.callParent();
+	},	
+	launch: function() {              
+		console.log('app launch');
+		var carousel = Ext.create('Ext.Carousel', {
+		    fullscreen: true,
+		    // clean instantiation using the widget.alias's defined
+            // in each view
+			items: [
+                { xtype: 'home' },
+				{ xtype: 'simplelist' }                
+            ]
+		});
     }
 });
